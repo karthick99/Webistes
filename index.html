@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MK Organic Oils - Pure. Organic. Trusted.</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .brand-font {
+            font-family: 'Montserrat', sans-serif;
+        }
+        .swiper {
+            width: 100%;
+            height: 100%;
+        }
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <a href="index.html" class="text-2xl font-bold text-green-700 brand-font">MK</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-green-700 font-medium hover:text-green-500 transition">Home</a>
+                    <a href="enquiry.html" class="text-gray-600 hover:text-green-500 transition">Enquiry</a>
+                    <a href="contact.html" class="text-gray-600 hover:text-green-500 transition">Contact Us</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-600 hover:text-green-500 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="md:hidden hidden bg-white pb-4 px-4">
+            <a href="index.html" class="block py-2 text-green-700 font-medium hover:bg-gray-100 rounded px-2">Home</a>
+            <a href="enquiry.html" class="block py-2 text-gray-600 hover:bg-gray-100 rounded px-2">Enquiry</a>
+            <a href="contact.html" class="block py-2 text-gray-600 hover:bg-gray-100 rounded px-2">Contact Us</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Carousel -->
+    <section class="relative h-[80vh]">
+        <div class="swiper heroSwiper h-full">
+            <div class="swiper-wrapper">
+                <!-- Slide 1: Groundnut Farms -->
+                <div class="swiper-slide relative" style="background-image: url('groundnut1.jpg');">
+                    <div class="absolute inset-0 bg-black opacity-50"></div>
+                    <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+                        <div class="text-white max-w-2xl">
+                            <h1 class="text-4xl md:text-5xl font-bold mb-4">Pure. Organic. Trusted.</h1>
+                            <p class="text-xl mb-8">Premium groundnut oil from our organic farms.</p>
+                            <a href="enquiry.html" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-block">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 2: Coconut Farms -->
+                <div class="swiper-slide relative" style="background-image: url('coconut.avif');">
+                    <div class="absolute inset-0 bg-black opacity-50"></div>
+                    <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+                        <div class="text-white max-w-2xl">
+                            <h1 class="text-4xl md:text-5xl font-bold mb-4">Coconut Farms</h1>
+                            <p class="text-xl mb-8">Sustainably grown coconuts for our premium oil.</p>
+                            <a href="enquiry.html" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-block">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Slide 3: Cold Pressing Machine -->
+                <div class="swiper-slide relative" style="background-image: url('Cold-Pressed-Oils.webp');">
+                    <div class="absolute inset-0 bg-black opacity-50"></div>
+                    <div class="container mx-auto px-4 h-full flex items-center relative z-10">
+                        <div class="text-white max-w-2xl">
+                            <h1 class="text-4xl md:text-5xl font-bold mb-4">Cold Pressed Excellence</h1>
+                            <p class="text-xl mb-8">Our traditional cold-pressing preserves all natural nutrients.</p>
+                            <a href="enquiry.html" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-lg transition duration-300 inline-block">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next text-white"></div>
+            <div class="swiper-button-prev text-white"></div>
+        </div>
+    </section>
+
+    <!-- Why We're Special Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Why We're Special</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-leaf text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Premium Quality</h3>
+                    <p class="text-gray-600">We provide premium groundnut and coconut oil, cold-pressed to preserve nutrients and flavor.</p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-search text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Farm Inspection</h3>
+                    <p class="text-gray-600">Our team visits farms and inspects the plantation process to ensure quality standards.</p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-handshake text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Trusted Farmers</h3>
+                    <p class="text-gray-600">We procure only from trusted organic farmers who follow sustainable farming practices.</p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-check-circle text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">100% Organic</h3>
+                    <p class="text-gray-600">Our oils are 100% organic with no preservatives, making them safe even for children.</p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-tint text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Farm-to-Bottle</h3>
+                    <p class="text-gray-600">We follow a strict farm-to-bottle process to ensure freshness and purity of our oils.</p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-md transition duration-300 text-center">
+                    <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                        <i class="fas fa-users text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Farmer Empowerment</h3>
+                    <p class="text-gray-600">Supporting local farmers with fair pricing and sustainable partnerships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Our Premium Oils</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('groundnut2.jpg');"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Groundnut Oil</h3>
+                        <p class="text-gray-600 mb-4">Our cold-pressed groundnut oil retains all natural nutrients and has a rich, nutty flavor perfect for cooking.</p>
+                        <a href="enquiry.html" class="text-green-600 hover:text-green-700 font-medium inline-flex items-center">
+                            Enquire Now
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Product 2 -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="h-64 bg-cover bg-center" style="background-image: url('coconut.avif');"></div>
+                    <div class="p-6">
+                        <h3 class="text-2xl font-semibold mb-2 text-gray-800">Coconut Oil</h3>
+                        <p class="text-gray-600 mb-4">Pure, organic coconut oil with its natural aroma and flavor. Ideal for cooking, skin care, and hair care.</p>
+                        <a href="enquiry.html" class="text-green-600 hover:text-green-700 font-medium inline-flex items-center">
+                            Enquire Now
+                            <i class="fas fa-arrow-right ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Combo Offers Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Combo Offers</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Combo 1 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="p-6">
+                        <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-percentage text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-center text-gray-800">Family Pack</h3>
+                        <ul class="text-gray-600 mb-4 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 2L Groundnut Oil</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 1L Coconut Oil</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 10% Off Regular Price</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <a href="enquiry.html" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 inline-block">Get This Offer</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Combo 2 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="p-6">
+                        <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-star text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-center text-gray-800">Premium Duo</h3>
+                        <ul class="text-gray-600 mb-4 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 5L Groundnut Oil</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 2L Coconut Oil</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 15% Off Regular Price</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <a href="enquiry.html" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 inline-block">Get This Offer</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Combo 3 -->
+                <div class="bg-gray-50 rounded-lg overflow-hidden shadow-md hover:shadow-lg transition duration-300">
+                    <div class="p-6">
+                        <div class="bg-green-100 w-16 h-16 mx-auto rounded-full flex items-center justify-center mb-4">
+                            <i class="fas fa-gift text-2xl text-green-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2 text-center text-gray-800">Bulk Special</h3>
+                        <ul class="text-gray-600 mb-4 space-y-2">
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 10L Groundnut Oil</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 5L Coconut Oil</li>
+                            <li class="flex items-center"><i class="fas fa-check text-green-500 mr-2"></i> 20% Off Regular Price</li>
+                        </ul>
+                        <div class="text-center mt-4">
+                            <a href="enquiry.html" class="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-4 rounded-lg transition duration-300 inline-block">Get This Offer</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- CTA Section -->
+    <section class="py-16 bg-green-600 text-white">
+        <div class="container mx-auto px-4 text-center">
+            <h2 class="text-3xl font-bold mb-6">Ready to Experience Pure Organic Oils?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Join our growing family of satisfied customers who have made the switch to healthier, organic oils.</p>
+            <a href="enquiry.html" class="bg-white text-green-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">Enquire Now</a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Company Info -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 brand-font">MK</h3>
+                    <p class="text-gray-400 mb-4">Premium cold-pressed oils sourced directly from organic farms.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white transition">Home</a></li>
+                        <li><a href="enquiry.html" class="text-gray-400 hover:text-white transition">Enquiry</a></li>
+                        <li><a href="contact.html" class="text-gray-400 hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-semibold mb-4">Contact Us</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>Salem, TamilNadu, India</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-phone-alt mr-3"></i>
+                            <span>+91 98400 23456</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fas fa-envelope mr-3"></i>
+                            <span>info@organicoils.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 MK Organic Oils. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <script>
+        // Initialize Swiper for hero section
+        var swiper = new Swiper(".heroSwiper", {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            loop: true,
+            autoplay: {
+                delay: 5000,
+                disableOnInteraction: false,
+            },
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    </script>
+</body>
+</html>
